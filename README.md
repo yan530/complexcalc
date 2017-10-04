@@ -39,7 +39,8 @@ about. In order to do that, the Calculator will be using "higher-order functions
 its operations.
 
 Additionally, certain mathematical operations (add, multiply) support more than
-two parameters, which we should also support.
+two parameters, which we should also support. These will take arrays of Integers as the single
+parameter.
 
 On top of that, we should be able to perform some operations on some different data types, such
 as Cartesian points (x,y pairs), so our Calculator will need to support those as well.
@@ -56,4 +57,14 @@ range of possibilities. Your assignment is to:
 * make the code compile
 * make the code pass the unit tests
 
-All of the work you will do will be in the "main.swift" file, inside of the "Calculator" class.
+All of the work you will do will be in the "Calculator.swift" file, inside of the "Calculator" class.
+The "main.swift" file contains a set of simple tests using Swift's native "assert" facility, which
+is a way of doing quick-and-easy unit testing when writing Swift. If there is any question about
+what to name a function or its parameters, check the test code to see how it is expected to be used.
+(Some functions will expect "nameless" parameters, using the `_` syntax of Swift.)
+
+**NOTE:** Do not modify the tests listed in the section with the comment "Do not modify code in this
+section." Changing the tests to make your code work is not good form, and is frowned upon by the
+other developers. All of the tests can pass--you need to figure out the Swift syntax to declare the
+functions properly in the Calculator class so that the code can compile and work as intended.
+
