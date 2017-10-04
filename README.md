@@ -45,10 +45,16 @@ parameter.
 On top of that, we should be able to perform some operations on some different data types, such
 as Cartesian points (x,y pairs), so our Calculator will need to support those as well.
 
+And, because your professor is an evil, evil man, we also want the Calculator to be able to add
+and subtract Cartesian points represented in "String-to-Int" dictionaries, as well.
+
 All of these will be backed by unit tests, so that you can know whether your code is working
 according to specification or not. The tests are available in the project, and you are free to
 look at them, but you may not modify them. (If you want to add to them, that's acceptable, so long
-as you do it in the proper space provided.)
+as you do it in the space provided.) Note that as the project stands now, the code will not
+compile; you may find it helpful to comment out certain tests in `main.swift` until you are 
+ready to tackle the bit of code they test, so that you can compile-and-run the code incrementally.
+(Strongly suggested that as you get each test working, commit your code to GitHub.)
 
 The project is configured to run as a command-line application on macOS (not iOS), and should
 have everything set up, including some unit tests to make sure that you are covering a good 
