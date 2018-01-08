@@ -44,17 +44,28 @@ parameter.
 
 On top of that, we should be able to perform some operations on some different data types, such
 as Cartesian points (x,y pairs), so our Calculator will need to support those as well.
+(Implementation note: by the use of the word "pairs" here, I mean to use tuples--specifically,
+Int-Int tuples. Two-element tuples are commonly called "pairs", three-element tuples are
+sometimes called "triplets", and four-element tuples are sometimes called "quads".)
 
 And, because your professor is an evil, evil man, we also want the Calculator to be able to add
 and subtract Cartesian points represented in "String-to-Int" dictionaries, as well.
 
 All of these will be backed by unit tests, so that you can know whether your code is working
 according to specification or not. The tests are available in the project, and you are free to
-look at them, but you may not modify them. (If you want to add to them, that's acceptable, so long
-as you do it in the space provided.) Note that as the project stands now, the code will not
-compile; you may find it helpful to comment out certain tests in `main.swift` until you are 
-ready to tackle the bit of code they test, so that you can compile-and-run the code incrementally.
-(Strongly suggested that as you get each test working, commit your code to GitHub.)
+look at them, but **you may not modify them**. (If you want to add to them, that's acceptable, so long
+as you do it in the space provided.)
+
+As the project stands now, the code will not compile, because you will not have the functions
+written that the test code calls. You may find it helpful to comment out certain tests in 
+`main.swift` until you are  ready to tackle the bit of code they test, so that you can 
+compile-and-run the code incrementally. 
+
+(It is **strongly** suggested that as you get each test working, commit your code to GitHub.
+Each time you get a little bit working, commit to GitHub. It is far, far easier for I and the TA
+to figure out where something went wrong and get you partial credit if we have a commit history
+to examine, as opposed to a "commit everything when I'm done" style that college students so
+often prefer.)
 
 The project is configured to run as a command-line application on macOS (not iOS), and should
 have everything set up, including some unit tests to make sure that you are covering a good 
