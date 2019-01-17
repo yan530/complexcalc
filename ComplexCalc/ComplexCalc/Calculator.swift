@@ -10,28 +10,44 @@ import Foundation
 
 // All your work will go in here
 class Calculator {
-    func add(_ args : [Int]) -> Int{
+    func add(lhs : Int, rhs : Int) -> Int {
+        return lhs + rhs
+    }
+    
+    func add(_ args : [Int]) -> Int {
         var result = 0
-        for num in nums {
-            result += num
+        var index = 0
+        while index < args.count {
+            result += args[index]
+            index += 1
         }
         return result
     }
     
-    func subtract(){
-        
+    func subtract(lhs : Int, rhs : Int) -> Int {
+        return lhs - rhs
     }
     
-    func multiply(){
-        
+    func multiply(lhs : Int, rhs : Int) -> Int {
+        return lhs * rhs
     }
     
-    func divide(){
-        
+    func multiply(_ args : [Int]) -> Int {
+        var result = 0
+        var index = 0
+        while index < args.count {
+            result *= args[index]
+            index += 1
+        }
+        return result
     }
     
-    func mathOp(){
-        
+    func divide(lhs : Int, rhs : Int) -> Int {
+        return lhs / rhs
+    }
+    
+    func mathOp(lhs : Int, rhs : Int, op : (Int, Int) -> Int) -> Int {
+        return op(lhs, rhs)
     }
     
     func count(){
