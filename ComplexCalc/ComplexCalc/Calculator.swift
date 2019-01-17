@@ -50,11 +50,22 @@ class Calculator {
         return op(lhs, rhs)
     }
     
-    func count(){
-        
+    func mathOp(args : [Int], beg : Int, op : (Int, Int) -> Int) -> Int {
+        var result = beg
+        var index = 0
+        while index < args.count {
+            result += op(result, args[index])
+            index += 1
+        }
+        return result
     }
     
-    func avg(){
-        
+    func count(_ args : [Int]) -> Int {
+        return args.count
+    }
+    
+    func avg(_ args : [Int]) -> Int {
+        let nums = args
+        return add(nums) / nums.count
     }
 }
