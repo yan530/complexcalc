@@ -10,4 +10,35 @@ import Foundation
 
 // All your work will go in here
 class Calculator {
+    func add(_ args : [Int]) -> Int{
+        var result = 0
+        for num in nums {
+            result += num
+        }
+        return result
+    }
+    
+    func subtract(){
+        
+    }
+    
+    func multiply(){
+        
+    }
+    
+    func divide(){
+        
+    }
+    
+    func mathOp(){
+        
+    }
+    
+    func count(){
+        
+    }
+    
+    func avg(){
+        
+    }
 }
