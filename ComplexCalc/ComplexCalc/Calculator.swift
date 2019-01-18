@@ -49,7 +49,7 @@ class Calculator {
     }
     
     func multiply(_ args : [Int]) -> Int {
-        var result = 0
+        var result = 1
         var index = 0
         while index < args.count {
             result *= args[index]
@@ -70,7 +70,7 @@ class Calculator {
         var result = beg
         var index = 0
         while index < args.count {
-            result += op(result, args[index])
+            result = op(result, args[index])
             index += 1
         }
         return result
